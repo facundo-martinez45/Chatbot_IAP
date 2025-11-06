@@ -12,7 +12,4 @@ sentencepiece==0.2.0
 pandas==2.2.2
 python-dotenv==1.0.1
 requests==2.32.3
-tqdm==4.66.5
-gtts==2.5.3
-pygame==2.5.2
-playsound3==2.0.3
+
