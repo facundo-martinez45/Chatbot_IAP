@@ -60,3 +60,9 @@ if mensaje:
         st.markdown(respuesta_texto)
 
     actualizar_historial("Bot", respuesta_texto, avatar="🤖")
+
+def crear_usuario_groq():
+    if "CLAVE_API" not in st.secrets:
+        st.error("⚠️ Falta la CLAVE_API en los secretos de Streamlit.")
+        st.stop()
+    return Groq(api_key=st.secrets["CLAVE_API"])
